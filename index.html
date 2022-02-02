@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Blog Site</title>
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+      <link rel="stylesheet" href="fontawesome/all.min.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+      <link rel="shortcut icon" href="image/favicon.png" width="64px" type="image/x-icon">
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="media.css">
+      <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
+</head>
+<body>
+      <!-- Start Header Part -->
+      <header id="header">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+                  <div class="container">
+                    <a class="navbar-brand" href="#"><img src="image/logo.png" alt=""></a>
+                    <!-- <form class="d-flex mr-auto">
+                        <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                      </form> -->
+                      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="fas fa-bars"></i>
+                      </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                      <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Blog Menu</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li><li class="nav-item">
+                              <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </nav>
+      </header>
+      <!-- End Header Part -->
+
+      <!-- start Carousel  -->
+      <section id="banner-carousel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="image/slide.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-md-block">
+                        <h5>The 20 Biggest Fintech Companies In
+                              America 2019</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                        <a href="#" class="btn btn-outline-dark">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="image/slide 2.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-md-block">
+                        <h5>The 20 Biggest Fintech Companies In
+                              America 2019</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                        <a href="#" class="btn btn-outline-dark">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="image/slide 3.jpg" class="d-block w-100" alt="...">
+                      <div class="carousel-caption d-md-block">
+                        <h5>The 20 Biggest Fintech Companies In
+                              America 2019</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                        <a href="#" class="btn btn-outline-dark">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <i class="fas fa-chevron-left"></i>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <i class="fas fa-chevron-right"></i>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+      </section>
+      <!-- End Carousel  -->
+
+
+      <!-- Start All Posts Part -->
+      <section id="posts">
+            <div class="container">
+                  <h2>All Posts</h2>
+                  <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                              <div class="row p-3">
+                                    <div class="most-single one rounded">
+                                          <a href="#">
+                                                <button type="button" class="btn btn-primary">Politics</button>
+                                                <div class="most-text">
+                                                      <h3>The 20 Biggest Fintech Companies In <br> America 2019</h3>
+                                                <span>30 Jabruary 2022</span>
+                                                </div>
+                                          </a>
+                                    </div>
+                              </div>
+                              <div class="row p-3">
+                                          <div class="most-single one rounded">
+                                                <a href="#">
+                                                      <button type="button" class="btn btn-primary">Politics</button>
+                                                      <div class="most-text">
+                                                            <h3>The 20 Biggest Fintech Companies In <br> America 2019</h3>
+                                                      <span>30 Jabruary 2022</span>
+                                                      </div>
+                                                </a>
+                                          </div>
+                                    </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                              <div class="row p-3">
+                                    <div class="most-single one rounded full-height">
+                                          <a href="#">
+                                                <button type="button" class="btn btn-primary">Politics</button>
+                                                <div class="most-text">
+                                                      <h3>The 20 Biggest Fintech Companies In <br> America 2019</h3>
+                                                <span>30 Jabruary 2022</span>
+                                                </div>
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-4 col-sm-12">
+                              <div class="row p-3">
+                                    <div class="most-single one rounded">
+                                          <a href="#">
+                                                <button type="button" class="btn btn-primary">Politics</button>
+                                                <div class="most-text">
+                                                      <h3>The 20 Biggest Fintech Companies In <br> America 2019</h3>
+                                                <span>30 Jabruary 2022</span>
+                                                </div>
+                                          </a>
+                                    </div>
+                              </div>
+                              <div class="row p-3">
+                                    <div class="most-single one rounded">
+                                          <a href="#">
+                                                <button type="button" class="btn btn-primary">Politics</button>
+                                                <div class="most-text">
+                                                      <h3>The 20 Biggest Fintech Companies In <br> America 2019</h3>
+                                                <span>30 Jabruary 2022</span>
+                                                </div>
+                                          </a>
+                                    </div>
+                              </div>
+                        </div>
+
+                  </div>
+            </div>
+      </section>
+      <!-- End All Posts Part -->
+      <!-- Start Recent Posts -->
+      <div class="container">
+            <div class="row recent_posts">
+                  <h2>Recent Posts</h2>
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="card">
+                              <img src="image/ximg_1.jpg.pagespeed.ic.YyH9FXuWL1.webp" class="rounded card-img-top" alt="...">
+                              <div class="card-body">
+                                    <button type="button" class="btn btn-success">Politics</button>
+                                    <h5 class="card-title">The AI magically removes moving objects from videos.</h5>
+                                    <div class="post-admin">
+                                          <img class="rounded-circle" src="image/xperson_1.jpg.pagespeed.ic.ycc-Edwyd1.webp" style="max-width: 40px;" alt="">
+                                          <span> By</span>
+                                          <a href="">Carrol Atkinson </a> 
+                                          <span>-  July 19, 2019</span>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.</p>
+                                    <a href="#" class="btn readMore btn-outline-success">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="card">
+                              <img src="image/ximg_1.jpg.pagespeed.ic.YyH9FXuWL1.webp" class="rounded card-img-top" alt="...">
+                              <div class="card-body">
+                                    <button type="button" class="btn btn-success">Politics</button>
+                                    <h5 class="card-title">The AI magically removes moving objects from videos.</h5>
+                                    <div class="post-admin">
+                                          <img class="rounded-circle" src="image/xperson_1.jpg.pagespeed.ic.ycc-Edwyd1.webp" style="max-width: 40px;" alt="">
+                                          <span> By</span>
+                                          <a href="">Carrol Atkinson </a> 
+                                          <span>-  July 19, 2019</span>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.</p>
+                                    <a href="#" class="btn readMore btn-outline-success">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="card">
+                              <img src="image/ximg_1.jpg.pagespeed.ic.YyH9FXuWL1.webp" class="rounded card-img-top" alt="...">
+                              <div class="card-body">
+                                    <button type="button" class="btn btn-success">Politics</button>
+                                    <h5 class="card-title">The AI magically removes moving objects from videos.</h5>
+                                    <div class="post-admin">
+                                          <img class="rounded-circle" src="image/xperson_1.jpg.pagespeed.ic.ycc-Edwyd1.webp" style="max-width: 40px;" alt="">
+                                          <span> By</span>
+                                          <a href="">Carrol Atkinson </a> 
+                                          <span>-  July 19, 2019</span>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.</p>
+                                    <a href="#" class="btn readMore btn-outline-success">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="card">
+                              <img src="image/ximg_1.jpg.pagespeed.ic.YyH9FXuWL1.webp" class="rounded card-img-top" alt="...">
+                              <div class="card-body">
+                                    <button type="button" class="btn btn-success">Politics</button>
+                                    <h5 class="card-title">The AI magically removes moving objects from videos.</h5>
+                                    <div class="post-admin">
+                                          <img class="rounded-circle" src="image/xperson_1.jpg.pagespeed.ic.ycc-Edwyd1.webp" style="max-width: 40px;" alt="">
+                                          <span> By</span>
+                                          <a href="">Carrol Atkinson </a> 
+                                          <span>-  July 19, 2019</span>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.</p>
+                                    <a href="#" class="btn readMore btn-outline-success">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="card">
+                              <img src="image/ximg_1.jpg.pagespeed.ic.YyH9FXuWL1.webp" class="rounded card-img-top" alt="...">
+                              <div class="card-body">
+                                    <button type="button" class="btn btn-success">Politics</button>
+                                    <h5 class="card-title">The AI magically removes moving objects from videos.</h5>
+                                    <div class="post-admin">
+                                          <img class="rounded-circle" src="image/xperson_1.jpg.pagespeed.ic.ycc-Edwyd1.webp" style="max-width: 40px;" alt="">
+                                          <span> By</span>
+                                          <a href="">Carrol Atkinson </a> 
+                                          <span>-  July 19, 2019</span>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.</p>
+                                    <a href="#" class="btn readMore btn-outline-success">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                              </div>
+                        </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="card">
+                              <img src="image/ximg_1.jpg.pagespeed.ic.YyH9FXuWL1.webp" class="rounded card-img-top" alt="...">
+                              <div class="card-body">
+                                    <button type="button" class="btn btn-success">Politics</button>
+                                    <h5 class="card-title">The AI magically removes moving objects from videos.</h5>
+                                    <div class="post-admin">
+                                          <img class="rounded-circle" src="image/xperson_1.jpg.pagespeed.ic.ycc-Edwyd1.webp" style="max-width: 40px;" alt="">
+                                          <span> By</span>
+                                          <a href="">Carrol Atkinson </a> 
+                                          <span>-  July 19, 2019</span>
+                                    </div>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo sunt tempora dolor laudantium sed optio, explicabo ad deleniti impedit facilis fugit recusandae! Illo, aliquid, dicta beatae quia porro id est.</p>
+                                    <a href="#" class="btn readMore btn-outline-success">Read More <i class="fas fa-long-arrow-alt-right"></i></a>
+                              </div>
+                        </div>
+                  </div>
+                  <nav class="d-flex justify-content-center"aria-label="...">
+                        <ul class="pagination">
+                              <li class="active"><a href="#">1</a> </li>
+                              <li><a href="#">2</a></li>
+                              <li><a href="#">3</a></li>
+                              <li><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
+                              <li><a href="#">10</a></li>
+                        </ul>
+                      </nav>
+            </div>
+      </div>
+      <!-- End Recent Posts -->   
+
+      <!-- Start Most Read -->
+      <div class="container-fluid most-recent">
+            <div class="container">
+                  <div class="row">
+                        <h2>Most Read Posts</h2>
+                        <div class="col-lg-8 col-md-6 col-sm-12"> 
+                              <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12 p-0">
+                                          <div class="most-single one">
+                                                <a href="#">
+                                                      <button type="button" class="btn btn-success">Politics</button>
+                                                      <div class="most-text">
+                                                            <h3>The 20 Biggest Fintech Companies In <br> America 2019</h3>
+                                                      <span>30 Jabruary 2022</span>
+                                                      </div>
+                                                </a>
+                                          </div>
+                                    </div> 
+                              </div>
+                              <div class="row">
+                                    <div class="col-lg-6 col-md-12 col-sm-12 p-0">
+                                          <div class="most-single one rounded">
+                                                <a href="#">
+                                                      <button type="button" class="btn btn-primary">Politics</button>
+                                                      <div class="most-text">
+                                                            <h3>The 20 Biggest Fintech Companies In <br> America 2019</h3>
+                                                      <span>30 Jabruary 2022</span>
+                                                      </div>
+                                                </a>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12 col-sm-12 p-0">
+                                          <div class="most-single one">
+                                                <a href="#">
+                                                      <button type="button" class="btn btn-warning">Politics</button>
+                                                      <div class="most-text">
+                                                            <h3>The 20 Biggest Fintech Companies In <br> America 2019</h3>
+                                                      <span>30 Jabruary 2022</span>
+                                                      </div>
+                                                </a>
+                                          </div>
+                                    </div>
+                              </div>
+                              
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12"> 
+                              <div class="most-single full-height">
+                                    <a href="#">
+                                          <button type="button" class="btn btn-danger">Politics</button>
+                                          <div class="most-text">
+                                                <h3>The 20 Biggest Fintech Companies In <br> America 2019</h3>
+                                          <span>30 Jabruary 2022</span>
+                                          </div>
+                                    </a>
+                              </div> 
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <!-- End Most Read -->    
+
+      <!-- Subscription Part -->
+      <section id="subscription">
+            <div class="container">
+                  <div class="row d-flex justify-content-center text-center">
+                        <div class="col-lg-7 col-md-7 col-sm-10">
+                              <h2>Subscribe to our newsletter</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit nesciunt error illum a explicabo, ipsam nostrum.</p>
+
+                  <form class="d-flex justify-content-center">
+                        <input type="email" placeholder="Enter Your Email Address">
+                        <button type="submit">Subscribe</button>
+                  </form>
+                        </div>
+                  </div>
+            </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer id="footer">
+            <div class="container">
+                  <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                              <h2>Blog Site</h2>
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, dolores quaerat reprehenderit quidem corrupti nihil libero id, laborum incidunt qui impedit recusandae fugit nulla blanditiis quis. At, corrupti facere. Illo.</p>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                              <ul>
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Posts</a></li>
+                                    <li><a href="#">Category</a></li>
+                                    <li><a href="#">Contact</a></li>
+                              </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6">
+                              <div class="icon">
+                              <a href=""><i class="fab fa-facebook-f"></i></a>
+                              <a href=""><i class="fab fa-twitter"></i></a>
+                              <a href=""><i class="fab fa-instagram"></i></a>
+                              <a href=""><i class="fab fa-linkedin-in"></i></a>  
+                              </div>
+                              
+                        </div>
+                  </div>
+                  <hr>
+                  <div class="row text-center p-2">
+                        <p>&copy; All Rights Reserved By 2022</p>
+                  </div>
+            </div>
+      </footer>
+
+      <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

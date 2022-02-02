@@ -1,0 +1,359 @@
+.btn {
+    padding: 0px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(0,0,0,.9);
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Header */
+#header .navbar-light .navbar-toggler {
+    border-color: #0d6efd;
+    border-radius: 0px;
+    padding: 3px 8px;
+}
+#header .navbar-toggler:focus {
+    box-shadow: none;
+}
+#header .navbar-toggler i {
+    font-size: 27px;
+    color: #0d6efd;
+}
+#header .dropdown:hover .dropdown-menu {
+    display: block;
+}
+#banner-carousel .carousel-item {
+    height: 400px;
+}
+#banner-carousel .carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+}
+#banner-carousel .carousel-indicators .active [data-bs-target] {
+    opacity: 1;
+}
+#banner-carousel .carousel-indicators {
+    bottom: 30px;
+    margin-left: 75%;
+}
+.carousel-caption {
+    right: 0;
+    background-color: #2222227d;
+    bottom: 0;
+    left: 0;
+    padding-left: 10%;
+    padding-top: 160px;
+    top: 0;
+    text-align: left;
+}
+.carousel-caption h5 {
+    font-size: 30px;
+}
+.carousel-control-next, .carousel-control-prev {
+    top: 49%;
+    width: 60px;
+    height: 50px;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+.carousel-control-next, .carousel-control-prev i {
+    font-size: 25px;
+    color: #000;
+}
+.carousel-control-next:focus, .carousel-control-next:hover, .carousel-control-prev:focus, .carousel-control-prev:hover {
+    color: #000;
+}
+#banner-carousel .btn-outline-dark {
+    color: #ffffff;
+    border-color: #ffffff;
+    padding: 7px 20px;
+    font-weight: 400;
+    font-size: 15px;
+}
+#banner-carousel .btn-outline-dark:hover {
+    color: #000000;
+    border-color: #ffffff;
+    background-color: #ffffff;
+}
+#banner-carousel .btn-outline-dark:focus {
+    outline: none;
+    box-shadow: none;
+}
+/* All Posts */
+section#posts {
+    padding-top: 80px;
+}
+#posts .full-height {
+    height: 620px;
+}
+#posts .most-single {
+     margin: 0px;
+}
+#posts .p-3 {
+    padding: 1rem!important;
+    padding-bottom: 0px!important;
+}
+.recent_posts {
+    margin: 80px 0 60px 0;
+}
+.card {
+    margin: 20px 0 20px 0;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.card-title {
+    font-size: 29px;
+    line-height: 35px;
+}
+a.btn.readMore.btn-outline-success {
+    color: #198754;
+    font-size: 16px;
+    padding: 4px 15px;
+    font-weight: 400;
+}
+a.btn.readMore.btn-outline-success:hover {
+    color: #ffff;
+    background-color: #198754;
+}
+a.btn.readMore.btn-outline-success:focus {
+    box-shadow: none;
+}
+.post-admin {
+    margin: 20px 0;
+}
+.post-admin span {
+    color: rgb(46, 46, 46);
+}
+.post-admin > a {
+    color: #000;
+    text-decoration: none;
+}
+.pagination {
+    margin-top: 30px;
+}
+.pagination li {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #0d6efd;
+    background-color: #0d6efd;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    margin: 5px;
+}
+.pagination .active {
+    border: 1px solid #0d6efd;
+    background-color: #fff;
+}
+.pagination .active a {
+    color: #0d6efd;
+}
+.pagination li a {
+    text-decoration: none;
+    color: #fff;
+}
+.pagination li:hover {
+    background-color: #fff;
+}
+.pagination li:hover a {
+    color: #0d6efd;
+}
+
+/* Most Style */
+.most-recent {
+    background-color: #9e9e9e2e;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.most-recent h2 {
+    margin-bottom: 20px;
+}
+.most-single.one {
+    background-image: url('pc.jpg');
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    height: 300px;
+}
+.most-single {
+    position: relative;
+    border-radius: 10px;
+    margin: 10px;
+}
+.most-single a{
+    text-decoration: none;
+}
+.most-single button.btn{
+    position: absolute;
+    left: 30px;
+}
+.most-single::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 8px;
+    content: '';
+    background: -moz-linear-gradient(top,transparent 0%,transparent 18%,rgba(0,0,0,.8) 99%,rgba(0,0,0,.8) 100%);
+    background: -webkit-linear-gradient(top,transparent 0%,transparent 18%,rgba(0,0,0,.8) 99%,rgba(0,0,0,.8) 100%);
+    background: -webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(18%,transparent),color-stop(99%,rgba(0,0,0,.8)),to(rgba(0,0,0,.8)));
+    background: -o-linear-gradient(top,transparent 0%,transparent 18%,rgba(0,0,0,.8) 99%,rgba(0,0,0,.8) 100%);
+    background: linear-gradient(to bottom,transparent 0%,transparent 18%,rgba(0,0,0,.8) 99%,rgba(0,0,0,.8) 100%);
+}
+.most-recent-single .btn.btn-success {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+}
+.most-text {
+    color: #fff;
+    text-decoration: none;
+    bottom: 30px;
+    position: absolute;
+    left: 30px;
+}
+.full-height {
+    background-image: url('ximg_4.jpg.pagespeed.ic.k-2jPfVLI5.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 620px;
+}
+/* Subscription */
+section#subscription {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: #ddd;
+}
+section#subscription h2 {
+    font-size: 28px;
+    font-weight: 500;
+}
+section#subscription p {
+    line-height: 30px;
+    font-size: 18px;
+    margin: 15px 0;
+}
+section#subscription form{
+    margin-top: 40px;
+}
+
+section#subscription input[type="email"] {
+    height: 45px;
+    width: 60%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+section#subscription input[type="email"]:focus {
+    border: 1px solid #0d6efd;
+}
+section#subscription button {
+    width: 25%;
+    background-color: #0d6efd;
+    border: none;
+    font-size: 19px;
+    color: #fff;
+    margin-left: -3px;
+}
+
+/* Footer */
+footer#footer {
+    background-color: #2c2a2a;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 10px;
+}
+footer#footer  ul {
+    list-style: none;
+}
+footer#footer  ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px;
+    line-height: 28px;
+    transition: 0.7s ;
+}
+footer#footer  ul li {
+    transition: 0.5s ;
+}
+footer#footer  ul li:hover {
+    transform: scale(1.1)
+}
+footer#footer .icon a {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px;
+    line-height: 28px;
+}
+/************************************************************
+End Index Style
+************************************************************/
+
+
+
+/***************************************************************
+Single Post Style
+***************************************************************/
+#single-post {
+    background: rgb(6, 5, 5) url("sky.jpg") no-repeat right top;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 250px 12% 80px 80px;
+    position: relative;
+}
+#single-post::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    top: 0;
+    opacity: 0.5;
+    bottom: 0;
+    left: 0;
+    background: #000;
+}
+#single-post .row {
+    z-index: 99;
+    position: relative;
+}
+#single-post .btn-primary {
+    width: 120px;
+}
+#single-post .post-admin span{
+    color: #fff;
+}
+#single-post h2 {
+    font-size: 45px;
+    line-height: 65px;
+}
+#single-post .post-admin {
+    margin: 15px 0;
+}
+
+/*********Popular style************/
+section#post-details {
+    padding: 80px 0 60px 0;
+}
+.popular-post .card {
+    margin: 20px 0 30px 0!important;
+    box-shadow: none;
+}
+.popular-post .card-body {
+    padding: 10px;
+}
+.popular-post .card-title {
+    font-size: 20px;
+    line-height: 25px;
+}

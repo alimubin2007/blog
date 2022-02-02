@@ -1,0 +1,70 @@
+@media screen and (max-width:992px){
+      .carousel-caption h5 {
+            font-size: 25px;
+      }
+      #banner-carousel .btn-outline-dark {
+            padding: 5px 16px;
+            font-size: 13px;
+      }
+      .carousel-control-next, .carousel-control-prev {
+            width: 42px;
+            height: 40px;
+      }
+      .carousel-control-next, .carousel-control-prev i {
+            font-size: 20px;
+      }
+      .most-text h3{
+            font-size: 20px;
+      }
+      .most-text span {
+            font-size: 13px;
+      }
+      .card-title {
+            font-size: 20px;
+            line-height: 25px;
+      }
+      .post-admin, p.card-text {
+            display: none;
+      }
+      a.btn.readMore.btn-outline-success {
+            font-size: 13px;
+            padding: 4px 12px;
+            margin: 7px 0 10px 0;
+      }
+
+} 
+
+@media screen and (max-width:768px){
+      #banner-carousel .carousel-item {
+            height: 100%;
+      }
+      #banner-carousel .btn-outline-dark {
+            padding: 5px 16px;
+            font-size: 13px;
+            margin: 5px 0;
+      }
+      .carousel-control-next, .carousel-control-prev {
+            display: none;
+      }
+      .carousel-caption {
+            padding-top: 120px;
+        }
+      .carousel-indicators {
+            display: none;
+      }
+      #posts .full-height {
+            height: 300px;
+      }
+      .full-height {
+            height: 250px;
+      }
+}
+@media screen and (max-width:576px){
+      section#banner-carousel {
+            display: none;
+      }
+      section#posts {
+            padding-top: 100px;
+      }
+}
+
